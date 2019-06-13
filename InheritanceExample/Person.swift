@@ -17,18 +17,19 @@ enum Gender{
 
 class Person{
     
-    private var _id: Int
-    var id: Int?
-    {
-        get{
-            return self._id
+        private var _id: Int
+        var id: Int?
+        {
+            get{
+                return self._id
+            }
+            /*
+            set{
+             
+                self._id = newValue ?? 0
+            }
+     */
         }
-        /*
-        set{
-            self._id = newValue ?? 0
-        }
- */
-    }
 
     
     
@@ -38,7 +39,7 @@ class Person{
     var lname: String?
     //enum is initialized here so we use that
     var gender: Gender
-    
+    var email: String
     var birthDate: Date?
     
     //computed property
@@ -56,7 +57,7 @@ class Person{
         self.lname = String()
         self.gender = Gender.OTHER
         self.birthDate = Date()
-        
+        self.email = String()
         self._id = 100
     }
     

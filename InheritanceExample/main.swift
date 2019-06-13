@@ -20,7 +20,15 @@ p.fname = "Sidharth"
 //p.fullName = "Hello"
 
 print(p.id!,p.fname!, p.lname!, p.fullName)
-
+s.fname = "Neeraj"
+s.lname = "Prasher"
+s.birthDate = Date()
+s.gender = Gender.MALE
+s.email = "prasher.neeraj99@gmail.com"
+s.marks = ["Math": 89,
+           "Science": 92,
+           "English": 95]
+print(s.fname ?? "No first name", s.lname ?? "No last name", s.birthDate ?? "No date of birth given", s.gender, s.email ?? "No email given", s.marks, s.total, s.per )
 
 
 
